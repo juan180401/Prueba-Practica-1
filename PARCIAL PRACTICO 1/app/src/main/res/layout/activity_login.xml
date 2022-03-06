@@ -39,11 +39,11 @@
 
         <Button
             android:id="@+id/btniniciar"
-            style="?android:attr/buttonStyleSmall"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_gravity="center_horizontal"
             android:layout_weight="0.1"
+            android:backgroundTint="#6A6C6A"
             android:onClick="autenticar"
             android:text="Iniciar Sesion" />
 

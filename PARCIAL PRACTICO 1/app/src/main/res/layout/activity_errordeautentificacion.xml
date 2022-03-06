@@ -52,6 +52,7 @@
         android:layout_height="114dp"
         android:layout_marginStart="104dp"
         android:layout_marginTop="368dp"
+        android:backgroundTint="#757875"
         android:onClick="regresar"
         android:text="REGRESAR A LOGIN"
         android:textSize="16sp"
