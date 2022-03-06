@@ -112,8 +112,8 @@
         android:id="@+id/btncamara"
         android:layout_width="96dp"
         android:layout_height="82dp"
-        android:layout_marginStart="105dp"
-        android:layout_marginTop="396dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="400dp"
         android:backgroundTint="#4AC109"
         android:text="TOMAR FOTO"
         app:layout_constraintStart_toStartOf="parent"
@@ -121,9 +121,9 @@
 
     <ImageView
         android:id="@+id/foto1"
-        android:layout_width="72dp"
+        android:layout_width="150dp"
         android:layout_height="86dp"
-        android:layout_marginStart="213dp"
+        android:layout_marginStart="168dp"
         android:layout_marginTop="396dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

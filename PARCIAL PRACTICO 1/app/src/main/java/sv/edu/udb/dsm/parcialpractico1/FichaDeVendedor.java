@@ -55,91 +55,91 @@ abrirCamara();
         }
     }
 
-    public void CALCULARCOMISION (View view){
-        String vendedor=nom.getText().toString();
-        String codvende=cod.getText().toString();
+    public void CALCULARCOMISION (View view) {
+        String vendedor = nom.getText().toString();
+        String codvende = cod.getText().toString();
         //capturamos el mes en el spinner
         String mesven = mes12.getSelectedItem().toString();
-        double ventashechas= Double.parseDouble(ven.getText().toString());
-        Bitmap tomada=((BitmapDrawable)foto.getDrawable()).getBitmap();
-      if (ventashechas<500){
-          String porcentajecomis="0%";
-          String comis="0";
-          Intent datos=new Intent(this,COMISIONES.class);
-          datos.putExtra("vennom",vendedor);
-          datos.putExtra("vencod",codvende);
-          datos.putExtra("venmes",mesven);
-          datos.putExtra("venvent",String.valueOf(ventashechas));
-          datos.putExtra("venporce",porcentajecomis);
-          datos.putExtra("vencomi",comis);
-          datos.putExtra("bit",tomada);
-          startActivity(datos);
-      }else if(ventashechas>=500&&ventashechas<1000){
-          String porcentajecomis="5%";
-          double comis=ventashechas*(0.05);
-          DecimalFormat deci = new DecimalFormat("#.##");
-          Intent datos=new Intent(this,COMISIONES.class);
-          datos.putExtra("vennom",vendedor);
-          datos.putExtra("vencod",codvende);
-          datos.putExtra("venmes",mesven);
-          datos.putExtra("venvent",String.valueOf(ventashechas));
-          datos.putExtra("venporce",porcentajecomis);
-          datos.putExtra("vencomi",deci.format(comis));
-          datos.putExtra("bit",tomada);
-          startActivity(datos);
-      }else if(ventashechas>=1000&&ventashechas<2000){
-          String porcentajecomis="10%";
-          double comis=ventashechas*(0.1);
-          DecimalFormat deci = new DecimalFormat("#.##");
-          Intent datos=new Intent(this,COMISIONES.class);
-          datos.putExtra("vennom",vendedor);
-          datos.putExtra("vencod",codvende);
-          datos.putExtra("venmes",mesven);
-          datos.putExtra("venvent",String.valueOf(ventashechas));
-          datos.putExtra("venporce",porcentajecomis);
-          datos.putExtra("vencomi",deci.format(comis));
-          datos.putExtra("bit",tomada);
-          startActivity(datos);
-      }else if(ventashechas>=2000&&ventashechas<3000){
-          String porcentajecomis="15%";
-          double comis=ventashechas*(0.15);
-          DecimalFormat deci = new DecimalFormat("#.##");
-          Intent datos=new Intent(this,COMISIONES.class);
-          datos.putExtra("vennom",vendedor);
-          datos.putExtra("vencod",codvende);
-          datos.putExtra("venmes",mesven);
-          datos.putExtra("venvent",String.valueOf(ventashechas));
-          datos.putExtra("venporce",porcentajecomis);
-          datos.putExtra("vencomi",deci.format(comis));
-          datos.putExtra("bit",tomada);
-          startActivity(datos);
-      }else if(ventashechas>=3000&&ventashechas<4000){
-          String porcentajecomis="20%";
-          double comis=ventashechas*(0.2);
-          DecimalFormat deci = new DecimalFormat("#.##");
-          Intent datos=new Intent(this,COMISIONES.class);
-          datos.putExtra("vennom",vendedor);
-          datos.putExtra("vencod",codvende);
-          datos.putExtra("venmes",mesven);
-          datos.putExtra("venvent",String.valueOf(ventashechas));
-          datos.putExtra("venporce",porcentajecomis);
-          datos.putExtra("vencomi",deci.format(comis));
-          datos.putExtra("bit",tomada);
-          startActivity(datos);
-      }else if(ventashechas>=4000) {
-          String porcentajecomis = "30%";
-          double comis = ventashechas * (0.3);
-          DecimalFormat deci = new DecimalFormat("#.##");
-          Intent datos=new Intent(this,COMISIONES.class);
-          datos.putExtra("vennom",vendedor);
-          datos.putExtra("vencod",codvende);
-          datos.putExtra("venmes",mesven);
-          datos.putExtra("venvent",String.valueOf(ventashechas));
-          datos.putExtra("venporce",porcentajecomis);
-          datos.putExtra("vencomi",deci.format(comis));
-          datos.putExtra("bit",tomada);
-          startActivity(datos);
-      }
+        double ventashechas = Double.parseDouble(ven.getText().toString());
+        Bitmap tomada = ((BitmapDrawable) foto.getDrawable()).getBitmap();
+        if (ventashechas < 500) {
+            String porcentajecomis = "0%";
+            String comis = "0";
+            Intent datos = new Intent(this, COMISIONES.class);
+            datos.putExtra("vennom", vendedor);
+            datos.putExtra("vencod", codvende);
+            datos.putExtra("venmes", mesven);
+            datos.putExtra("venvent", String.valueOf(ventashechas));
+            datos.putExtra("venporce", porcentajecomis);
+            datos.putExtra("vencomi", comis);
+            datos.putExtra("bit", tomada);
+            startActivity(datos);
+        } else if (ventashechas >= 500 && ventashechas < 1000) {
+            String porcentajecomis = "5%";
+            double comis = ventashechas * (0.05);
+            DecimalFormat deci = new DecimalFormat("#.##");
+            Intent datos = new Intent(this, COMISIONES.class);
+            datos.putExtra("vennom", vendedor);
+            datos.putExtra("vencod", codvende);
+            datos.putExtra("venmes", mesven);
+            datos.putExtra("venvent", String.valueOf(ventashechas));
+            datos.putExtra("venporce", porcentajecomis);
+            datos.putExtra("vencomi", deci.format(comis));
+            datos.putExtra("bit", tomada);
+            startActivity(datos);
+        } else if (ventashechas >= 1000 && ventashechas < 2000) {
+            String porcentajecomis = "10%";
+            double comis = ventashechas * (0.1);
+            DecimalFormat deci = new DecimalFormat("#.##");
+            Intent datos = new Intent(this, COMISIONES.class);
+            datos.putExtra("vennom", vendedor);
+            datos.putExtra("vencod", codvende);
+            datos.putExtra("venmes", mesven);
+            datos.putExtra("venvent", String.valueOf(ventashechas));
+            datos.putExtra("venporce", porcentajecomis);
+            datos.putExtra("vencomi", deci.format(comis));
+            datos.putExtra("bit", tomada);
+            startActivity(datos);
+        } else if (ventashechas >= 2000 && ventashechas < 3000) {
+            String porcentajecomis = "15%";
+            double comis = ventashechas * (0.15);
+            DecimalFormat deci = new DecimalFormat("#.##");
+            Intent datos = new Intent(this, COMISIONES.class);
+            datos.putExtra("vennom", vendedor);
+            datos.putExtra("vencod", codvende);
+            datos.putExtra("venmes", mesven);
+            datos.putExtra("venvent", String.valueOf(ventashechas));
+            datos.putExtra("venporce", porcentajecomis);
+            datos.putExtra("vencomi", deci.format(comis));
+            datos.putExtra("bit", tomada);
+            startActivity(datos);
+        } else if (ventashechas >= 3000 && ventashechas < 4000) {
+            String porcentajecomis = "20%";
+            double comis = ventashechas * (0.2);
+            DecimalFormat deci = new DecimalFormat("#.##");
+            Intent datos = new Intent(this, COMISIONES.class);
+            datos.putExtra("vennom", vendedor);
+            datos.putExtra("vencod", codvende);
+            datos.putExtra("venmes", mesven);
+            datos.putExtra("venvent", String.valueOf(ventashechas));
+            datos.putExtra("venporce", porcentajecomis);
+            datos.putExtra("vencomi", deci.format(comis));
+            datos.putExtra("bit", tomada);
+            startActivity(datos);
+        } else if (ventashechas >= 4000) {
+            String porcentajecomis = "30%";
+            double comis = ventashechas * (0.3);
+            DecimalFormat deci = new DecimalFormat("#.##");
+            Intent datos = new Intent(this, COMISIONES.class);
+            datos.putExtra("vennom", vendedor);
+            datos.putExtra("vencod", codvende);
+            datos.putExtra("venmes", mesven);
+            datos.putExtra("venvent", String.valueOf(ventashechas));
+            datos.putExtra("venporce", porcentajecomis);
+            datos.putExtra("vencomi", deci.format(comis));
+            datos.putExtra("bit", tomada);
+            startActivity(datos);
+        }
     }
     private void abrirCamara() {
         Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);

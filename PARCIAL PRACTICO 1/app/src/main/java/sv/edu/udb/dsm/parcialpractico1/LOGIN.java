@@ -20,20 +20,35 @@ EditText usua,contr;
     }
 
 public void autenticar(View view) {
+if (validar()) {
+        SharedPreferences datos = getSharedPreferences("credenciales", Context.MODE_PRIVATE);
+        String nombre = usua.getText().toString();
+        String contrase = contr.getText().toString();
 
-    SharedPreferences datos = getSharedPreferences("credenciales", Context.MODE_PRIVATE);
-    String nombre = usua.getText().toString();
-    String contrase = contr.getText().toString();
+        SharedPreferences.Editor editor = datos.edit();
+        editor.putString("user", nombre);
+        editor.putString("pass", contrase);
 
-    SharedPreferences.Editor editor = datos.edit();
-    editor.putString("user", nombre);
-    editor.putString("pass",contrase);
+        editor.commit();
 
-    editor.commit();
-
-    Intent s=new Intent(this, MainActivity.class);
-    startActivity(s);
-
+        Intent s = new Intent(this, MainActivity.class);
+        startActivity(s);
+    }
 }
-
+//validacion de campos vacíos
+ public boolean validar(){
+ boolean retorno=true;
+     String nombre = usua.getText().toString();
+     String contrase = contr.getText().toString();
+     if(nombre.isEmpty())
+     {
+         usua.setError("Este campo no puede quedar vacío");
+         retorno=false;
+     }
+     if(contrase.isEmpty()){
+         contr.setError("Este campo no puede quedar vacío");
+         retorno=false;
+     }
+     return retorno;
+ }
 }
