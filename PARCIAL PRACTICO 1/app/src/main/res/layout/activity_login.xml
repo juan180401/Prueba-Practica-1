@@ -18,7 +18,7 @@
             android:layout_height="0dp"
             android:layout_gravity="center_horizontal"
             android:layout_weight="2"
-            android:text="BIENVENIDO"
+            android:text="INICIO DE SESIÓN"
             android:textAppearance="?android:attr/textAppearanceLarge" />
         <EditText
             android:id="@+id/logusuario"
@@ -46,14 +46,7 @@
             android:layout_weight="0.1"
             android:onClick="autenticar"
             android:text="Iniciar Sesion" />
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:text="Salir"
-            android:layout_gravity="bottom"
-            android:onClick="finalizar"
-            android:layout_weight="0.1"
-            android:id="@+id/btnSalir" />
+
         <TextView
             android:id="@+id/verificador"
             android:layout_width="wrap_content"

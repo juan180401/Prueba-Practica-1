@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 TextView us1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,6 +34,10 @@ TextView us1;
     {
         Intent e=new Intent(this, Ecuacion.class);
         startActivity(e);
+    }
+    public void ventas (View view){
+        Intent ven=new Intent(this,FichaDeVendedor.class);
+        startActivity(ven);
     }
     public void fin (View view){
         Intent ini=new Intent(this, LOGIN.class);

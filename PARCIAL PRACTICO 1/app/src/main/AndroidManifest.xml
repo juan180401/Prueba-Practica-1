@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="sv.edu.udb.dsm.parcialpractico1">
 
+    <uses-feature android:name="android.hardware.camera"
+        android:required="true"></uses-feature>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -10,10 +13,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PARCIALPRACTICO1">
         <activity
-            android:name=".Ecuacion"
-            android:exported="true" >
-
+            android:name=".COMISIONES"
+            android:exported="true" />
+        <activity
+            android:name=".FichaDeVendedor"
+            android:exported="true">
         </activity>
+        <activity
+            android:name=".Ecuacion"
+            android:exported="true" />
         <activity
             android:name=".ERRORDEAUTENTIFICACION"
             android:exported="true" />
@@ -25,12 +33,11 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>

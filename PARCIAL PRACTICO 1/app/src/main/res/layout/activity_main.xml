@@ -35,11 +35,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btn1"
+        android:id="@+id/btnventa"
         android:layout_width="224dp"
         android:layout_height="70dp"
         android:layout_marginStart="93dp"
         android:layout_marginTop="206dp"
+        android:backgroundTint="#7F807F"
+        android:onClick="ventas"
         android:text="FICHA DE VENDEDOR"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -50,6 +52,7 @@
         android:layout_height="70dp"
         android:layout_marginStart="93dp"
         android:layout_marginTop="286dp"
+        android:backgroundTint="#7F807F"
         android:onClick="resolverecuacion"
         android:text="ECUACIÓN CUADRATICA"
         app:layout_constraintStart_toStartOf="parent"
@@ -61,6 +64,7 @@
         android:layout_height="70dp"
         android:layout_marginStart="93dp"
         android:layout_marginTop="371dp"
+        android:backgroundTint="#7F807F"
         android:onClick="fin"
         android:text="SALIR"
         app:layout_constraintStart_toStartOf="parent"

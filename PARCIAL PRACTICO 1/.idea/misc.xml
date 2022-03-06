@@ -3,10 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/TAREAS Y CLASES/2022/CICLO 1/DSM/Semana 7/PARCIAL PRACTICO 1/app/src/main/res/layout/activity_comisiones.xml" value="0.25" />
         <entry key="..\:/TAREAS Y CLASES/2022/CICLO 1/DSM/Semana 7/PARCIAL PRACTICO 1/app/src/main/res/layout/activity_ecuacion.xml" value="0.33" />
         <entry key="..\:/TAREAS Y CLASES/2022/CICLO 1/DSM/Semana 7/PARCIAL PRACTICO 1/app/src/main/res/layout/activity_errordeautentificacion.xml" value="0.25" />
+        <entry key="..\:/TAREAS Y CLASES/2022/CICLO 1/DSM/Semana 7/PARCIAL PRACTICO 1/app/src/main/res/layout/activity_ficha_de_vendedor.xml" value="0.25" />
         <entry key="..\:/TAREAS Y CLASES/2022/CICLO 1/DSM/Semana 7/PARCIAL PRACTICO 1/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
         <entry key="..\:/TAREAS Y CLASES/2022/CICLO 1/DSM/Semana 7/PARCIAL PRACTICO 1/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/TAREAS Y CLASES/2022/CICLO 1/DSM/Semana 7/PARCIAL PRACTICO 1/app/src/main/res/layout/spinner_item_color.xml" value="0.1" />
+        <entry key="..\:/TAREAS Y CLASES/2022/CICLO 1/DSM/Semana 7/PARCIAL PRACTICO 1/app/src/main/res/layout/spinner_item_colores.xml" value="0.1" />
       </map>
     </option>
   </component>

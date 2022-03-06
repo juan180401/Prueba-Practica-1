@@ -36,7 +36,4 @@ public void autenticar(View view) {
 
 }
 
-    public void finalizar (View view){
-        finish();
-    }
 }
