@@ -47,10 +47,11 @@ TextView res,res2;
             double p8positivo=(p6)/(2*a1);
             double p7negativo=(p1)/(2*a1);
             double p8negativo=(p6)/(2*a1);
-            String resulta1=String.valueOf(p7positivo);
-            String resulta2=String.valueOf(p8positivo);
-            String resulta3=String.valueOf(p7negativo);
-            String resulta4=String.valueOf(p8negativo);
+            DecimalFormat dec = new DecimalFormat("#.##");
+            String resulta1=String.valueOf(dec.format(p7positivo));
+            String resulta2=String.valueOf(dec.format(p8positivo));
+            String resulta3=String.valueOf(dec.format(p7negativo));
+            String resulta4=String.valueOf(dec.format(p8negativo));
             res.setText(resulta1+"+"+resulta2+"i");
             res2.setText(resulta3+"-"+resulta4+"i");
             va1.setText("");
@@ -75,7 +76,6 @@ TextView res,res2;
 
         }
     public void volver (View view){
-        Intent vol=new Intent(this, MainActivity.class);
-        startActivity(vol);
+        finish();
     }
 }

@@ -34,4 +34,9 @@ TextView us1;
         Intent e=new Intent(this, Ecuacion.class);
         startActivity(e);
     }
+    public void fin (View view){
+        Intent ini=new Intent(this, LOGIN.class);
+        startActivity(ini);
+        finish();
+    }
 }
